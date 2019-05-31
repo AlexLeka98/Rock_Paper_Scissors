@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
     private Button rst;
 
     /**
-     * This method creates random numbers from 1 to 3. It is used to give the Bot it's three options.
+     * This method generates random numbers from 1 to 3. It is used to give the Bot it's three options.
      * 1 = rock, 2 = paper, 3 = scissors.
      * @return it returns a random number between 1 to 3.
      */
@@ -190,7 +190,6 @@ public class MainActivity extends AppCompatActivity {
         rock_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 reset(flag);
                 flag = true;
                 rock_button.setBackgroundColor(rock_button.getResources().getColor(R.color.gray));
@@ -235,7 +234,6 @@ public class MainActivity extends AppCompatActivity {
         scissors_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 reset(flag);
                 flag = true;
                 scissors_button.setBackgroundColor(scissors_button.getResources().getColor(R.color.gray));
@@ -274,11 +272,9 @@ public class MainActivity extends AppCompatActivity {
          * If bot choice = 2 (paper), then we have a draw. So, draws = + 1.
          * If bot choice = 3(scissors), then we have a lose. So, lose = + 1.
          */
-
         paper_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 reset(flag);
                 flag = true;
                 paper_button.setBackgroundColor(paper_button.getResources().getColor(R.color.gray));
@@ -309,12 +305,11 @@ public class MainActivity extends AppCompatActivity {
 
 
         /**
-         * This method is used when switch button is used. If you click or drag switch button it activates nightmode.
+         * This method is used when switch button is pressed-on. If you click or drag switch button it activates nightmode.
          * Nightmode is nothing more than setting the colour background to black. If you click on that switch again, the background returns
          * to its original colour.
          *
          */
-
         swtch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
