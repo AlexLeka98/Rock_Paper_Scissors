@@ -1,5 +1,6 @@
 package com.example.testing;
 
+import android.graphics.drawable.ColorDrawable;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -345,6 +346,7 @@ public class MainActivity extends AppCompatActivity {
         outState.putInt("winss",wins);
         outState.putInt("losess",loses);
         outState.putInt("tiess",ties);
+        outState.putBoolean("flagg",flag);
 
         outState.putInt("botTitle",botTitle.getVisibility());
         outState.putInt("youTitle",youTitle.getVisibility());
@@ -354,6 +356,9 @@ public class MainActivity extends AppCompatActivity {
         outState.putInt("rock_img_bot",rock_img_bot.getVisibility());
         outState.putInt("paper_img_bot",paper_img_bot.getVisibility());
         outState.putInt("scissors_img_bot",scissors_img_bot.getVisibility());
+        outState.putInt("image_win",image_win.getVisibility());
+        outState.putInt("image_lose",image_lose.getVisibility());
+        outState.putInt("image_draw",image_draw.getVisibility());
         outState.putInt("versus",versus.getVisibility());
 
         super.onSaveInstanceState(outState);
@@ -366,6 +371,7 @@ public class MainActivity extends AppCompatActivity {
         wins = savedInstanceState.getInt("winss");
         loses = savedInstanceState.getInt("losess");
         ties = savedInstanceState.getInt("tiess");
+        flag = savedInstanceState.getBoolean("flagg");
 
         winsV.setText(savedInstanceState.getString("my_text1"));
         losesV.setText(savedInstanceState.getString("my_text2"));
@@ -379,6 +385,12 @@ public class MainActivity extends AppCompatActivity {
         rock_img_bot.setVisibility(savedInstanceState.getInt("rock_img_bot"));
         paper_img_bot.setVisibility(savedInstanceState.getInt("paper_img_bot"));
         scissors_img_bot.setVisibility(savedInstanceState.getInt("scissors_img_bot"));
+        image_win.setVisibility(savedInstanceState.getInt("image_win"));
+        image_lose.setVisibility(savedInstanceState.getInt("image_lose"));
+        image_draw.setVisibility(savedInstanceState.getInt("image_draw"));
+
+
+
         versus.setVisibility(savedInstanceState.getInt("versus"));
 
 
