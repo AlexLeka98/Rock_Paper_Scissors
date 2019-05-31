@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8B0D0D</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="tabRPS">#B9B906</color>
+    <color name="backgroundColor">#F1D091</color>
+    <color name="backgroundColorNightMode">#070000</color>
+    <color name="WLTColors">#1B4AB3</color>
+    <color name="gray">#678CEB</color>
+
+</resources>
